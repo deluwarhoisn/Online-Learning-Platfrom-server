@@ -66,7 +66,7 @@ async function run() {
       }
     });
 
-    // Enroll user
+   
     app.post("/enroll", async (req, res) => {
       const { courseId, userEmail } = req.body;
       if (!courseId || !userEmail) return res.status(400).send({ message: "Missing fields" });
